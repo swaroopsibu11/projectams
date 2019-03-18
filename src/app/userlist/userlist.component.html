@@ -1,0 +1,18 @@
+<!-- <p>
+  userlist works!
+</p> -->
+
+<h1 class="one">Employees List: </h1>
+<div class="two">
+<table >
+<tr><th>User name</th>
+  <th> Entry Time</th>
+  <th> Exit Time</th>
+  <th></th></tr>
+<tr *ngFor="let i of userNames"><td>{{i}}</td>
+  <td><button (click)="entry($event)">Login Time</button></td>
+  <td><button (click)="exit($event)">Logout Time</button></td>
+  <td><button (click)="Delete($event)">Total Time</button>
+  </td></tr>
+</table> 
+</div> 
